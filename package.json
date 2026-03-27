@@ -1,28 +1,35 @@
 {
-  "name": "oit_trivia_trek",
-  "version": "1.0.0",
-  "description": "Trivia Trek Coding Challenge",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Jtoosh/oit_trivia_trek.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/Jtoosh/oit_trivia_trek/issues"
-  },
-  "homepage": "https://github.com/Jtoosh/oit_trivia_trek#readme",
-  "devDependencies": {
-    "@biomejs/biome": "2.4.9",
-    "typescript": "^6.0.2"
-  },
-  "dependencies": {
-    "@types/node": "^25.5.0"
-  }
+	"name": "oit_trivia_trek",
+	"version": "1.0.0",
+	"description": "Trivia Trek Coding Challenge",
+	"main": "index.js",
+	"scripts": {
+		"start": "vite",
+		"build": "tsc && vite build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/Jtoosh/oit_trivia_trek.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/Jtoosh/oit_trivia_trek/issues"
+	},
+	"homepage": "https://github.com/Jtoosh/oit_trivia_trek#readme",
+	"devDependencies": {
+		"@biomejs/biome": "2.4.9",
+		"@types/react": "^19.2.14",
+		"@types/react-dom": "^19.2.3",
+		"@vitejs/plugin-react": "^6.0.1",
+		"typescript": "^6.0.2",
+		"vite": "^8.0.3"
+	},
+	"dependencies": {
+		"@types/node": "^25.5.0",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4"
+	}
 }
