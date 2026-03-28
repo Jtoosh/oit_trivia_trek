@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { useNavigate } from "react-router";
 import { Button } from "@/components/ui/button.js";
 import {
 	Select,
@@ -8,21 +9,25 @@ import {
 	SelectTrigger,
 	SelectValue,
 } from "@/components/ui/select.js";
+import { TriviaContext } from "@/context/TriviaContext.js";
 import type { Difficulty } from "@/model/types/Difficulty.js";
 import { WelcomePresenter } from "@/presenter/WelcomePresenter.js";
 
 const Welcome = () => {
 	const presenter = new WelcomePresenter();
+	const navigate = useNavigate();
+	const { setQuestions } = useContext(TriviaContext) ?? {};
 
 	const [difficulty, setDifficulty] = useState("easy");
 	const [category, setCategory] = useState("");
 
 	const displayQuestions = async (difficulty: string, category: string) => {
-		const response = await presenter.getTriviaQuestions(
+		const questions = await presenter.getTriviaQuestions(
 			difficulty as Difficulty,
 			category,
 		);
-		console.log(response);
+		setQuestions?.(questions);
+		navigate("/question");
 	};
 	return (
 		<div className="flex flex-col items-center justify-center gap-6 p-8">
