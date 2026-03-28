@@ -32,4 +32,19 @@ npm start
 
 ## Disclosure of Tools Used
 
-This challenge was approached as if it were a work responsibility where access to external resources like documentation, Stack Overflow, and AI tools are available. The majority of code was user written, with the exception of `TriviaContext.tsx`. The AI CLI tool Opencode was used to assist with this part of the application to maximize output in the time contraints. 
+This challenge was approached as if it were a work responsibility where access to external resources like documentation, Stack Overflow, and AI tools are available. The majority of code was user written, with the exception of `TriviaContext.tsx`. The AI CLI tool Opencode was used to assist with this part of the application to maximize output in the time contraints.
+
+Overview of Tools used:
+- Node.js and `npm` for runtime engine and package manager
+- Biome.js for linting and formatting
+- Vite for frontend bundling and building
+- Typescript and React for frontend code
+- Shadcn/ui library for react components and styling
+
+## Next Steps
+
+With more time, I would add the following features: 
+- Finish question displaying
+- Add the game logic for scoring and tracking the total score.
+- Add a replay button that sends another API call
+- Improve some of the styling and UI
