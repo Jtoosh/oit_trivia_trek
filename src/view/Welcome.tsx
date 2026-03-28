@@ -9,8 +9,8 @@ import {
 
 const Welcome = () => {
 	return (
-		<div className={"text-center align-super"}>
-			<h1 className={"text-2xl"}>Welcome to Trivia Trek.</h1>
+		<div className="flex flex-col items-center justify-center gap-6 p-8">
+			<h1 className={"text-3xl"}>Welcome to Trivia Trek.</h1>
 			<Select>
 				<SelectTrigger className="w-[180px]">
 					<SelectValue placeholder="Difficulty" />
