@@ -1,7 +1,10 @@
 {
 	"compilerOptions": {
+		"ignoreDeprecations": "6.0",
+		"baseUrl": ".",
 		"paths": {
-			"@/*": ["./src/*"]
+			"@/*": ["./src/*"],
+			"@/lib/utils": ["./src/lib/utils.ts"]
 		},
 		"rootDir": "./src",
 		"outDir": "./dist",

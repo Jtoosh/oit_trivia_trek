@@ -1,7 +1,9 @@
+import Welcome from "@/view/Welcome.js";
+
 const App = () => {
 	return (
 		<div>
-			<p>Hi there!</p>
+			<Welcome />
 		</div>
 	);
 };
