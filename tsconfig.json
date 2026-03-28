@@ -1,26 +1,29 @@
 {
-  "compilerOptions": {
-     "rootDir": "./src",
-     "outDir": "./dist",
+	"compilerOptions": {
+		"baseUrl": ".",
+		"paths": {
+			"@/*": ["./src"]
+		},
+		"rootDir": "./src",
+		"outDir": "./dist",
 
+		"module": "nodenext",
+		"target": "esnext",
+		"lib": ["esnext", "dom"],
+		"types": ["node"],
 
-    "module": "nodenext",
-    "target": "esnext",
-     "lib": ["esnext", "dom"],
-     "types": ["node"],
+		"sourceMap": true,
+		"declaration": true,
+		"declarationMap": true,
 
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-    "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-  }
+		"noUncheckedIndexedAccess": true,
+		"exactOptionalPropertyTypes": true,
+		"strict": true,
+		"jsx": "react-jsx",
+		"verbatimModuleSyntax": true,
+		"isolatedModules": true,
+		"noUncheckedSideEffectImports": true,
+		"moduleDetection": "force",
+		"skipLibCheck": true
+	}
 }
